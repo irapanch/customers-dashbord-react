@@ -6,4 +6,5 @@ This ptoject is the test task for FOP Horbachova.
 - использование БЭМ
 - Pixel Perfect верстка (в подобных ситуациях делаем один отступ https://i.imgur.com/SdAJ23k.png)
 - Мобильную версию делаете на свое усмотрение, но она должна быть
- 
+ ![Screenshot_6](https://github.com/irapanch/customers-dashbord-react/assets/117355580/e418fec3-4de3-488e-9d05-e031e1f4e9ea)
+
