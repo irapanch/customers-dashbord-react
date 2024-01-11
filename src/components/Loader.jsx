@@ -1,6 +1,6 @@
 import React from 'react';
 import { BallTriangle } from 'react-loader-spinner';
-import { StyledLoader } from 'styles/App.Styled';
+import { StyledLoader } from 'components/App.Styled';
 
 export const Loader = () => {
   return (

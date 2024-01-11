@@ -4,7 +4,7 @@ import {
   StyledContactLi,
   StyledSpan,
   StyledBtnDelete,
-} from '../styles/App.Styled';
+} from './App.Styled';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   selectContacts,

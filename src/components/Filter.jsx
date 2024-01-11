@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { StyledDesc, StyledContact } from '../styles/App.Styled';
+import { StyledDesc, StyledContact } from './App.Styled';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { selectFilter } from 'redux/selectors';

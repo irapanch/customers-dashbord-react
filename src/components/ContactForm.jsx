@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 
-import {
-  StyledForm,
-  StyledTitle,
-  StyledDesc,
-  StyledBtn,
-} from '../styles/App.Styled';
+import { StyledForm, StyledTitle, StyledDesc, StyledBtn } from './App.Styled';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { addContactThunk } from 'redux/operations';
