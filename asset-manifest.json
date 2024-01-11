@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-07-phonebook/static/css/main.7cda0caf.css",
-    "main.js": "/goit-react-hw-07-phonebook/static/js/main.60859b17.js",
-    "index.html": "/goit-react-hw-07-phonebook/index.html",
-    "main.7cda0caf.css.map": "/goit-react-hw-07-phonebook/static/css/main.7cda0caf.css.map",
-    "main.60859b17.js.map": "/goit-react-hw-07-phonebook/static/js/main.60859b17.js.map"
+    "main.css": "/customers-dashbord-react/static/css/main.d58f8cd1.css",
+    "main.js": "/customers-dashbord-react/static/js/main.ff72c2c5.js",
+    "static/media/Poppins-Regular.ttf": "/customers-dashbord-react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/customers-dashbord-react/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/customers-dashbord-react/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "index.html": "/customers-dashbord-react/index.html",
+    "main.d58f8cd1.css.map": "/customers-dashbord-react/static/css/main.d58f8cd1.css.map",
+    "main.ff72c2c5.js.map": "/customers-dashbord-react/static/js/main.ff72c2c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cda0caf.css",
-    "static/js/main.60859b17.js"
+    "static/css/main.d58f8cd1.css",
+    "static/js/main.ff72c2c5.js"
   ]
 }
