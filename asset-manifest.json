@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/customers-dashbord-react/static/css/main.d58f8cd1.css",
-    "main.js": "/customers-dashbord-react/static/js/main.ff72c2c5.js",
+    "main.js": "/customers-dashbord-react/static/js/main.80fdbf35.js",
     "static/media/Poppins-Regular.ttf": "/customers-dashbord-react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-SemiBold.ttf": "/customers-dashbord-react/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Poppins-Bold.ttf": "/customers-dashbord-react/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/user.png": "/customers-dashbord-react/static/media/user.03daaf8276d51a9bb1cb.png",
+    "static/media/sprite.svg": "/customers-dashbord-react/static/media/sprite.ba08ad39bc16321e9b51f75ba1fb6e75.svg",
     "index.html": "/customers-dashbord-react/index.html",
     "main.d58f8cd1.css.map": "/customers-dashbord-react/static/css/main.d58f8cd1.css.map",
-    "main.ff72c2c5.js.map": "/customers-dashbord-react/static/js/main.ff72c2c5.js.map"
+    "main.80fdbf35.js.map": "/customers-dashbord-react/static/js/main.80fdbf35.js.map"
   },
   "entrypoints": [
     "static/css/main.d58f8cd1.css",
-    "static/js/main.ff72c2c5.js"
+    "static/js/main.80fdbf35.js"
   ]
 }
