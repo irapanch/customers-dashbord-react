@@ -19,7 +19,7 @@ const Global = createGlobalStyle`
   }
 
 body {
-  background-color: ${({ theme }) => theme.colors.bgMain};
+  background-color: ${({ theme }) => theme.backgrounds.main};
   margin: 0;
     font-family: 'Poppins', sans-serif; 
     font-size: 14px;

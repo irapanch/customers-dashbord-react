@@ -1,7 +1,8 @@
+import { Container } from 'components/App.Styled';
 import React from 'react';
 
 const PromotePage = () => {
-  return <div>PromotePage</div>;
+  return <Container>PromotePage</Container>;
 };
 
 export default PromotePage;
