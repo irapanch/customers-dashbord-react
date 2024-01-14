@@ -112,7 +112,7 @@ export const StyledNavLink = styled(NavLink)`
   }
 `;
 export const UserWrap = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 10%;
   left: 28px;
   display: flex;

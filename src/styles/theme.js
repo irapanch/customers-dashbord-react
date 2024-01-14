@@ -6,13 +6,20 @@ export const theme = {
     accent: 'rgba(131, 131, 131, 1)',
     bgMain: 'rgba(226, 236, 249, 0.5)',
     hover: 'rgba(255, 255, 255, 1)',
+    active: 'rgba(22, 192, 152, 1)',
+    input: 'rgba(181, 183, 192, 1)',
   },
   backgrounds: {
     main: 'rgba(250, 251, 255, 1)',
     active: 'rgba(89, 50, 234, 1)',
+    input: 'rgba(249, 251, 255, 1)',
   },
   transition: {
     cubic: '500ms cubic-bezier(0.4, 0, 0.2, 1)',
+  },
+
+  borders: {
+    table: '1px solid rgba(238, 238, 238, 1)',
   },
 
   shadows: {

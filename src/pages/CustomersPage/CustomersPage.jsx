@@ -1,7 +1,8 @@
 import React from 'react';
+import Customers from '../../components/Customer/Customer';
 
 const CustomersPage = () => {
-  return <div>CustomersPage</div>;
+  return <Customers />;
 };
 
 export default CustomersPage;
