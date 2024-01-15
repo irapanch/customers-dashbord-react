@@ -1,12 +1,15 @@
 import React from 'react';
-import customers from '../../../assets/contacts.json';
 import { StyledTable, StyledTitleTable } from './Table.styled';
 import { TableContainer } from '../Customer.styled';
+import { Loader } from 'components/Loader';
 
-const Table = () => {
+const Table = ({ customers, loading }) => {
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <TableContainer>
-      {customers.map(customer => {
+      {customers?.map((customer, i) => {
         return (
           <StyledTable key={customer.id}>
             <StyledTitleTable className="name">

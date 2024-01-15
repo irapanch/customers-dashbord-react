@@ -92,8 +92,7 @@ export const StyledTable = styled.ul`
   font-weight: 500;
   line-height: 21px;
   display: flex;
-  /* justify-content: space-between; */
-  /* margin-right: 23px; */
+
   padding-bottom: 14px;
   color: ${({ theme }) => theme.colors.input};
 `;
@@ -113,4 +112,9 @@ export const StyledTitleTable = styled.li`
   &.country {
     width: 144px;
   }
+`;
+
+export const PaginatorWrap = styled.div`
+  display: flex;
+  gap: 10px;
 `;
