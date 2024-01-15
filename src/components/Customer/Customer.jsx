@@ -35,7 +35,7 @@ const Customer = () => {
         <StyledTable>
           <StyledTitleTable className="name">Customer Name</StyledTitleTable>
           <StyledTitleTable className="company">Company</StyledTitleTable>
-          <StyledTitleTable className="number">Phone Number</StyledTitleTable>
+          <StyledTitleTable className="phone">Phone Number</StyledTitleTable>
           <StyledTitleTable className="email">Email</StyledTitleTable>
           <StyledTitleTable className="country">Country</StyledTitleTable>
           <StyledTitleTable className="status">Status</StyledTitleTable>

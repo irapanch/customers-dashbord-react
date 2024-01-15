@@ -55,7 +55,7 @@ export const StyledInput = styled.div`
   }
   > input {
     height: 100%;
-    border-radius: 7px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     background-color: transparent;
@@ -68,6 +68,16 @@ export const StyledInput = styled.div`
       -webkit-text-fill-color: ${({ theme }) => theme.colors.input};
       transition: background-color 5000s ease-in-out 0s;
       box-shadow: inset 0 0 20px 20px #23232329;
+    }
+    &::placeholder {
+      /* Веб-переглядачі на основі WebKit, Blink (Safari, Google Chrome, Opera 15+) */
+      color: ${({ theme }) => theme.colors.input};
+      opacity: 1; /* Firefox */
+    }
+
+    &::-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: ${({ theme }) => theme.colors.input};
     }
   }
 `;
@@ -82,10 +92,25 @@ export const StyledTable = styled.ul`
   font-weight: 500;
   line-height: 21px;
   display: flex;
-  justify-content: space-between;
-  margin-right: 23px;
+  /* justify-content: space-between; */
+  /* margin-right: 23px; */
   padding-bottom: 14px;
   color: ${({ theme }) => theme.colors.input};
-  border-bottom: ${({ theme }) => theme.borders.table};
 `;
-export const StyledTitleTable = styled.li``;
+export const StyledTitleTable = styled.li`
+  &.name {
+    width: 190px;
+  }
+  &.company {
+    width: 145px;
+  }
+  &.phone {
+    width: 155px;
+  }
+  &.email {
+    width: 185px;
+  }
+  &.country {
+    width: 144px;
+  }
+`;
