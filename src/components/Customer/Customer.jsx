@@ -14,7 +14,6 @@ import { IoSearch } from 'react-icons/io5';
 import Table from './Table/Table';
 import axios from 'axios';
 import Paginator from '../Paginator/Paginator';
-import PaginatorIcons from '../Paginator/PaginatorIcons';
 
 const Customer = () => {
   const [customers, setCustomers] = useState([]);
@@ -40,9 +39,8 @@ const Customer = () => {
     firstCustomerIndex,
     lastCustomerIndex
   );
-  // const paginate = pageNumber => setCurrentPage(pageNumber);
-  // const nextPage = () => setCurrentPage(prev => prev + 1);
-  // const prevPage = () => setCurrentPage(prev => prev - 1);
+  const lastIndex = firstCustomerIndex + currentCustomer.length;
+  const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
     <StyledContainer>
@@ -77,20 +75,10 @@ const Customer = () => {
         <Paginator
           customersPerPage={customersPerPage}
           totalCustomers={customers.length}
-          // paginate={paginate}
-        />
-        {/* <button onClick={prevPage}>
-          <PaginatorIcons iconId="icon-pagi-left" />
-        </button>
-
-        <Paginator
-          customersPerPage={customersPerPage}
-          totalCustomers={customers.length}
           paginate={paginate}
+          firstCustomerIndex={firstCustomerIndex}
+          lastIndex={lastIndex}
         />
-        <button onClick={nextPage}>
-          <PaginatorIcons iconId="icon-pagi-right" />
-        </button> */}
       </PaginatorWrap>
     </StyledContainer>
   );

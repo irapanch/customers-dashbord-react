@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 export const StyledContainer = styled.section`
   max-width: 100%;
   width: 968px;
-  max-height: 812px;
+  height: 100%;
 
   margin-top: 128px;
   margin-left: 71px;
