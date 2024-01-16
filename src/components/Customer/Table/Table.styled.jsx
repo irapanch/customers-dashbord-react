@@ -1,19 +1,22 @@
 import { styled } from 'styled-components';
 export const StyledTable = styled.ul`
-  /* padding-left: 30px;
-  padding-right: 30px; */
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: ${({ theme }) => theme.borders.table};
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 17px;
   display: flex;
   gap: 5px;
 
   color: ${({ theme }) => theme.colors.tableText};
   &:last-child {
     border-bottom: none;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
   }
 `;
 export const StyledTitleTable = styled.li`
@@ -24,13 +27,19 @@ export const StyledTitleTable = styled.li`
     width: 142px;
   }
   &.phone {
-    width: 151px;
+    width: 180px;
+    @media screen and (min-width: 1440px) {
+      width: 151px;
+    }
   }
   &.email {
     width: 178px;
   }
   &.country {
-    width: 141px;
+    width: 130px;
+    @media screen and (min-width: 1440px) {
+      width: 141px;
+    }
   }
   &.status {
     display: flex;

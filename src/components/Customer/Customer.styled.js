@@ -1,16 +1,28 @@
 import { styled } from 'styled-components';
 
 export const StyledContainer = styled.section`
-  max-width: 100%;
-  width: 968px;
-  height: 100%;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px 0;
+    border-radius: 7px;
+    background-color: ${({ theme }) => theme.colors.hover};
+  }
 
-  margin-top: 128px;
-  margin-left: 71px;
-  padding: 38px 0;
+  @media screen and (min-width: 1440px) {
+    max-width: 100%;
+    width: 968px;
+    height: 100%;
 
-  border-radius: 7px;
-  background-color: ${({ theme }) => theme.colors.hover};
+    margin-top: 128px;
+    margin-left: 71px;
+    padding: 38px 0;
+
+    /* border-radius: 7px;
+    background-color: ${({ theme }) => theme.colors.hover}; */
+  }
 `;
 export const TitleWrap = styled.div`
   display: flex;
@@ -88,13 +100,18 @@ export const TableContainer = styled.div`
   border-bottom: ${({ theme }) => theme.borders.table};
 `;
 export const StyledTable = styled.ul`
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 20px;
   display: flex;
 
   padding-bottom: 14px;
   color: ${({ theme }) => theme.colors.input};
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
 `;
 export const StyledTitleTable = styled.li`
   &.name {
@@ -104,7 +121,10 @@ export const StyledTitleTable = styled.li`
     width: 145px;
   }
   &.phone {
-    width: 155px;
+    width: 180px;
+    @media screen and (min-width: 1440px) {
+      width: 155px;
+    }
   }
   &.email {
     width: 185px;

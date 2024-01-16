@@ -1,22 +1,27 @@
 import HeaderMob from 'components/Header/HeaderMob/HeaderMob';
-import HeaderTab from 'components/Header/HeaderTab/HeaderTab';
+import HeaderDesc from 'components/Header/HeaderDesc/HeaderDesc';
 import { Loader } from 'components/Loader';
 import React, { Suspense } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Outlet } from 'react-router-dom';
 import { MainContainer } from './Layout.styled';
+import HeaderTab from 'components/Header/HeaderTab/HeaderTab';
 
 const Layout = () => {
   const isMobile = useMediaQuery({
-    query: '(max-width: 500px)',
+    query: '(max-width: 767px)',
   });
-  const isDesktopOrTablet = useMediaQuery({
-    query: '(min-width: 501px)',
+  const isTablet = useMediaQuery({
+    query: '(min-width: 768px) and (max-width: 1439px)',
+  });
+  const isDesktop = useMediaQuery({
+    query: '(min-width: 1440px)',
   });
   return (
     <MainContainer>
       {isMobile && <HeaderMob />}
-      {isDesktopOrTablet && <HeaderTab />}
+      {isTablet && <HeaderTab />}
+      {isDesktop && <HeaderDesc />}
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
