@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/customers-dashbord-react/static/css/main.d58f8cd1.css",
-    "main.js": "/customers-dashbord-react/static/js/main.09d96323.js",
+    "main.js": "/customers-dashbord-react/static/js/main.794aebfc.js",
     "static/media/Poppins-Regular.ttf": "/customers-dashbord-react/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-SemiBold.ttf": "/customers-dashbord-react/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Poppins-Bold.ttf": "/customers-dashbord-react/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
@@ -9,10 +9,10 @@
     "static/media/sprite.svg": "/customers-dashbord-react/static/media/sprite.51693268fd0e66136bfc49b80ae6b835.svg",
     "index.html": "/customers-dashbord-react/index.html",
     "main.d58f8cd1.css.map": "/customers-dashbord-react/static/css/main.d58f8cd1.css.map",
-    "main.09d96323.js.map": "/customers-dashbord-react/static/js/main.09d96323.js.map"
+    "main.794aebfc.js.map": "/customers-dashbord-react/static/js/main.794aebfc.js.map"
   },
   "entrypoints": [
     "static/css/main.d58f8cd1.css",
-    "static/js/main.09d96323.js"
+    "static/js/main.794aebfc.js"
   ]
 }
