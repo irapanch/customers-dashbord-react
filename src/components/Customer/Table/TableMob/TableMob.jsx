@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Loader } from 'components/Loader';
 
 import {
@@ -38,6 +39,21 @@ const TableMob = ({ customers, loading }) => {
       })}
     </TableContainer>
   );
+};
+
+TableMob.propTypes = {
+  customers: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      status: PropTypes.bool,
+      name: PropTypes.string,
+      company: PropTypes.string,
+      phone: PropTypes.string,
+      email: PropTypes.string,
+      country: PropTypes.string,
+    })
+  ),
+  loading: PropTypes.bool,
 };
 
 export default TableMob;

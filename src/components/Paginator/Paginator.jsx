@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { PaginateContainer, StyledPaginator } from './Paginator.styled';
 import PaginatorIcons from './PaginatorIcons';
 
@@ -56,6 +57,14 @@ const Paginator = ({
       </div>
     </PaginateContainer>
   );
+};
+
+Paginator.propTypes = {
+  customersPerPage: PropTypes.number.isRequired,
+  totalCustomers: PropTypes.number.isRequired,
+  paginate: PropTypes.func.isRequired,
+  firstCustomerIndex: PropTypes.number.isRequired,
+  lastIndex: PropTypes.number.isRequired,
 };
 
 export default Paginator;
