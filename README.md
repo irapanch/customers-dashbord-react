@@ -8,3 +8,6 @@ This ptoject is the test task for FOP Horbachova.
 - Мобильную версию делаете на свое усмотрение, но она должна быть
  ![Screenshot_6](https://github.com/irapanch/customers-dashbord-react/assets/117355580/e418fec3-4de3-488e-9d05-e031e1f4e9ea)
 
+
+ 
+
