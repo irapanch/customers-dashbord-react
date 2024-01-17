@@ -1,14 +1,17 @@
 import { styled } from 'styled-components';
 
 export const StyledContainer = styled.section`
+  width: 335px;
+  margin: auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-radius: 7px;
+  background-color: ${({ theme }) => theme.colors.hover};
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 100%;
     margin: auto;
-    margin-top: 10px;
     padding: 15px 0;
-    border-radius: 7px;
-    background-color: ${({ theme }) => theme.colors.hover};
   }
 
   @media screen and (min-width: 1440px) {
@@ -19,38 +22,48 @@ export const StyledContainer = styled.section`
     margin-top: 128px;
     margin-left: 71px;
     padding: 38px 0;
-
-    /* border-radius: 7px;
-    background-color: ${({ theme }) => theme.colors.hover}; */
   }
 `;
 export const TitleWrap = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-right: 30px;
-  padding-left: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `;
 export const Title = styled.h1`
-  margin-bottom: 7px;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 33px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+  }
 `;
 
 export const StyledSubtitle = styled.p`
-  margin-bottom: 40px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  color: ${({ theme }) => theme.colors.active};
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: ${({ theme }) => theme.colors.active};
+  }
 `;
 export const StyledInput = styled.div`
   display: flex;
   align-items: center;
-  width: 216px;
-  height: 38px;
-  margin-right: 23px;
+  width: 305px;
+  height: 40px;
+
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -92,21 +105,33 @@ export const StyledInput = styled.div`
       color: ${({ theme }) => theme.colors.input};
     }
   }
+  @media screen and (min-width: 768px) {
+    width: 216px;
+    height: 38px;
+    margin-right: 23px;
+  }
 `;
 
 export const TableContainer = styled.div`
-  padding-right: 30px;
-  padding-left: 30px;
-  border-bottom: ${({ theme }) => theme.borders.table};
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-bottom: ${({ theme }) => theme.borders.table};
+  }
 `;
 export const StyledTable = styled.ul`
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  display: flex;
-
-  padding-bottom: 14px;
-  color: ${({ theme }) => theme.colors.input};
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    padding-bottom: 14px;
+    color: ${({ theme }) => theme.colors.input};
+  }
   @media screen and (min-width: 1440px) {
     font-size: 14px;
     font-weight: 500;
@@ -132,9 +157,4 @@ export const StyledTitleTable = styled.li`
   &.country {
     width: 144px;
   }
-`;
-
-export const PaginatorWrap = styled.div`
-  display: flex;
-  gap: 10px;
 `;

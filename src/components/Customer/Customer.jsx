@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {
-  PaginatorWrap,
   StyledContainer,
   StyledInput,
   StyledSubtitle,
@@ -11,9 +10,11 @@ import {
   TitleWrap,
 } from './Customer.styled';
 import { IoSearch } from 'react-icons/io5';
+import { useMediaQuery } from 'react-responsive';
 import Table from './Table/Table';
 import axios from 'axios';
 import Paginator from '../Paginator/Paginator';
+import TableMob from './Table/TableMob/TableMob';
 
 const Customer = () => {
   const [customers, setCustomers] = useState([]);
@@ -41,6 +42,13 @@ const Customer = () => {
   );
   const lastIndex = firstCustomerIndex + currentCustomer.length;
   const paginate = pageNumber => setCurrentPage(pageNumber);
+
+  const isMobile = useMediaQuery({
+    query: '(max-width: 767px)',
+  });
+  const isTablet = useMediaQuery({
+    query: '(min-width: 768px) ',
+  });
 
   return (
     <StyledContainer>
@@ -70,16 +78,16 @@ const Customer = () => {
           <StyledTitleTable className="status">Status</StyledTitleTable>
         </StyledTable>
       </TableContainer>
-      <Table customers={currentCustomer} loading={loading} />
-      <PaginatorWrap>
-        <Paginator
-          customersPerPage={customersPerPage}
-          totalCustomers={customers.length}
-          paginate={paginate}
-          firstCustomerIndex={firstCustomerIndex}
-          lastIndex={lastIndex}
-        />
-      </PaginatorWrap>
+      {isMobile && <TableMob customers={currentCustomer} loading={loading} />}
+      {isTablet && <Table customers={currentCustomer} loading={loading} />}
+
+      <Paginator
+        customersPerPage={customersPerPage}
+        totalCustomers={customers.length}
+        paginate={paginate}
+        firstCustomerIndex={firstCustomerIndex}
+        lastIndex={lastIndex}
+      />
     </StyledContainer>
   );
 };

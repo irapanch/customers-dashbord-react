@@ -4,7 +4,7 @@ import foto from '../../../images/user.png';
 import sprite from '../../../images/sprite.svg';
 
 import { RiUserLine, RiCoinLine } from 'react-icons/ri';
-import users from '../../../assets/users.json';
+
 import {
   Icons,
   IconsWrap,
@@ -14,13 +14,11 @@ import {
   StyledHeader,
   StyledLogo,
   StyledNavLink,
-  UserDesc,
   UserWrap,
   Version,
 } from './HeaderMob.styled';
 
 const HeaderMob = () => {
-  const user = users[0];
   return (
     <StyledHeader>
       <LogoWrap>
@@ -74,10 +72,6 @@ const HeaderMob = () => {
       </nav>
       <UserWrap>
         <img src={foto} alt="Users foto" />
-        <UserDesc>
-          <p>{user.name}</p>
-          <p className="description">{user.position}</p>
-        </UserDesc>
       </UserWrap>
     </StyledHeader>
   );

@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 export const StyledHeader = styled.header`
   position: relative;
   width: 306px;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 36px;
   padding-left: 28px;
   color: ${({ theme }) => theme.colors.bgMain};

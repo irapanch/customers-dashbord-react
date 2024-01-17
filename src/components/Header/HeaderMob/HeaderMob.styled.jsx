@@ -131,13 +131,10 @@ export const StyledNavLink = styled(NavLink)`
 export const UserWrap = styled.div`
   height: 50px;
   position: absolute;
-  bottom: -62px;
-  left: 25%;
+  left: 60%;
   display: flex;
   gap: 12px;
-  border: ${({ theme }) => theme.borders.table};
   padding: 5px;
-  background-color: ${({ theme }) => theme.backgrounds.paginate};
 
   > img {
     width: 42px;
@@ -148,7 +145,7 @@ export const UserWrap = styled.div`
     position: absolute;
     top: 20px;
     left: 210px;
-    border: none;
+
     background-color: inherit;
   }
 `;

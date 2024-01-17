@@ -12,23 +12,28 @@ const fireAnimation = keyframes`
 export const PaginateContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
-  padding: 30px 30px 0 30px;
+  gap: 8px;
   > h3 {
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
     color: ${({ theme }) => theme.colors.input};
   }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 30px 0 30px;
+  }
 `;
 
 export const StyledPaginator = styled(ReactPaginate).attrs({
   activeClassName: 'active',
 })`
-  margin-left: auto;
+  margin: auto;
   display: flex;
-  gap: 12px;
+  gap: 5px;
 
   li {
     width: 25px;
@@ -54,12 +59,6 @@ export const StyledPaginator = styled(ReactPaginate).attrs({
     background-color: ${({ theme }) => theme.backgrounds.paginate};
   }
 
-  li.previous {
-  }
-
-  li.next {
-  }
-
   li.previous a,
   li.next a,
   li.break a {
@@ -82,5 +81,9 @@ export const StyledPaginator = styled(ReactPaginate).attrs({
   li.disable,
   li.disabled a {
     cursor: default;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    gap: 12px;
   }
 `;
